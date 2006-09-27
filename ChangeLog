@@ -1,0 +1,6 @@
+2006-09.27  Péter Szabó   <pts@fazekas.hu>
+
+	* version 0.11 released
+	* initial CPAN upload
+	* based on MIME::Words version 5.420
+	* based on initial BetterMIMEWords.pm
