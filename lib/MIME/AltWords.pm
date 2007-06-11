@@ -24,7 +24,18 @@ use MIME::AltWords0; #use MIME::Words;
 use MIME::Base64;
 use Encode;
 use warnings;
+use Exporter;
 no warnings qw(prototype redefine);
+
+# vvv Dat: exports symbols from MIME::AltWords0 by default, works only
+#     without these
+#use vars qw(@EXPORT_OK %EXPORT_TAGS);
+#BEGIN {
+#  @EXPORT_OK=@MIME::AltWords0::EXPORT_OK;
+#  %EXPORT_TAGS=%MIME::AltWords0::EXPORT_TAGS;
+##  die "@EXPORT_OK";
+#}
+#Exporter::export_ok_tags('all');
 
 =pod
 
@@ -108,7 +119,7 @@ use vars qw($NONPRINT $VERSION);
 
 ### The package version, both in 1.23 style *and* usable by MakeMaker:
 BEGIN { # vvv Dat: MakeMaker needs $VERSION in a separate line
-$VERSION = "0.11"
+$VERSION = "0.12"
 }
 
 # Dat: MIME::Words has [\x00-\x1F\x7F-\xFF]. We prepare for Unicode.

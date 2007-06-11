@@ -69,7 +69,7 @@ use vars qw($VERSION @EXPORT_OK %EXPORT_TAGS @ISA);
 
 ### Exporting:
 use Exporter;
-%EXPORT_TAGS = (all => [qw(decode_mimewords
+%EXPORT_TAGS = (all => [qw(decode_mimewords encode_mimewords encode_mimeword
 			   )]);
 Exporter::export_ok_tags('all');
 
